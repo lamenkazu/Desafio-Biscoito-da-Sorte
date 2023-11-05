@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+
+html, body, button{
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+main{
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+
+    width: 42.8rem;
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    
+}
+
+.screen1, .screen2{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1.4rem;
+    font-size: 2.4rem;
+    color: #34355B;
+}
+
+.screen1 p{
+    margin-bottom: 2.6rem;
+    font-size: 1.5rem;
+    color: #34355B;
+}
+
+.screen2{
+    font-family: 'Dancing Script', cursive;
+}
+
+.sorte{
+    background-color: #E4EDF1;
+    padding: 1rem;
+    font-size: 2.4rem;
+
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+
+    margin-top: 1.7rem;
+    margin-bottom: 6rem ;
+}
+
+button{
+    padding: 1.6rem;
+    background-color: #FF9500;
+    border: none;
+    border-radius: .4rem;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+
+    margin-top: 6rem;
+}
+
+.hide{
+    display: none;
+}
+
+
+.screen1 img:hover{
+    animation: treme 0.1s infinite;
+}
+
+
+@keyframes treme {
+    0% {margin-left: 0;}
+    25% {margin-left: 5px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -5px;}
+    100% {margin-left: 0;}
+}
+
+.sorte{
+    animation: moveUp 2s ease-in-out; /* Duração da animação e curva de aceleração */
+    animation-fill-mode: forwards; /* Mantém a posição final após a animação */
+
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(15rem) scale(0.1); /* Comece a partir de uma posição vertical de 0 */
+    }
+    to {
+        transform: translateY(0); /* Vá até uma posição vertical de -200px */
+    }
+}
